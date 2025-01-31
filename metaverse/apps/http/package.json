@@ -1,0 +1,19 @@
+{
+  "name": "http",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --b && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@repo/db": "*",
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2",
+    "typescript": "^5.7.3",
+    "zod": "^3.24.1"
+  },
+  "description": ""
+}
