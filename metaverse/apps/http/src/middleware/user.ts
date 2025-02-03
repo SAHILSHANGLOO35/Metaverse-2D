@@ -18,6 +18,8 @@ export const userMiddleware = (req: Request, res: Response, next: NextFunction) 
         req.userId = decoded.userId;
         next();
     } catch (error) {
-        
+        res.status(403).json({
+            message: "Invalid or expired token"
+        });
     }
 }
