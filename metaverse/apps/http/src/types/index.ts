@@ -11,7 +11,7 @@ export const SigninSchema = z.object({
     password: z.string().min(6),
 })
 
-export const UpdatMetadataSchema = z.object({
+export const UpdateMetadataSchema = z.object({
     avatadId: z.string()
 })
 

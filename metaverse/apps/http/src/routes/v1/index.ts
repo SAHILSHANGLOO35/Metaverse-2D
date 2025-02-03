@@ -37,7 +37,7 @@ router.post("/signup", async (req, res) => {
     }
 });
 
-router.post("/signup", async (req, res) => {
+router.post("/signin", async (req, res) => {
     const parsedData = SigninSchema.safeParse(req.body);
     if(!parsedData.success) {
         res.status(403).json({
